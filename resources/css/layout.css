@@ -1,0 +1,15 @@
+.custom-layout {
+    padding: 2rem 9rem !important;
+}
+
+.custom-layout .form-group {
+    justify-content: center !important;
+}
+
+.custom-layout .custom-form
+{
+   display: inline-grid;
+    grid-template-columns: 100px auto;
+    gap: 1rem;
+}
+
