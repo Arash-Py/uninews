@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Filter\Filter;
+
+class {{ filter }} extends Filter
+{
+    // ...
+}

@@ -27,4 +27,6 @@ class Handler extends ExceptionHandler
             //
         });
     }
+    //Todo: fix 404 error exception
+
 }
