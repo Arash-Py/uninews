@@ -15,9 +15,9 @@ use Laravel\Passport\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-class User extends Authenticatable implements HasMedia
+class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, InteractsWithMedia;
+    use HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -105,15 +105,4 @@ class User extends Authenticatable implements HasMedia
         return $this->morphMany(Ticket::class,'ticketable');
     }
 
-    public function getAvatarAttribute()
-    {
-         if ($this->hasMedia('avatars')) {
-             $media = $this->getMedia('avatars');
-             $last = $media->last();
-             $last = $media->last();
-             return $last->getFullUrl();
-         } else {
-        return 'https://ui-avatars.com/api/?name=' . urlencode($this->full_name) . '&color=7F9CF5&background=EBF4FF';
-         }
-    }
 }
