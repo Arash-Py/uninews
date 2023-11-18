@@ -44,10 +44,6 @@ class AppServiceProvider extends ServiceProvider
             Theme::addHtmlAttribute('body', 'direction', 'rtl');
         };
 
-        Relation::enforceMorphMap([
-            'watchman' => 'App\Models\Watchman',
-            'user' => 'App\Models\User',
-            'admin' => 'App\Models\Admin'
-        ]);
+
     }
 }

@@ -6,14 +6,14 @@
         <!--begin::Heading-->
         <div class="text-center mb-11">
             <a href="http://iran-park.ir" target="_blank">
-                <img alt="drtop" draggable="false" src="{{ asset('custom/logo/full_logo.svg') }}" class="h-100px mb-10">
+{{--                <img alt="drtop" draggable="false" src="{{ asset('custom/logo/full_logo.svg') }}" class="h-100px mb-10">--}}
             </a >
             <livewire:admin.alerts />
             <!--begin::Title-->
             <h1 class="text-dark fw-bolder mb-3">ورود به پنل ادمین</h1>
             <!--end::Title-->
             <!--begin::Subtitle-->
-            <div class="text-gray-500 fw-semibold fs-6">Iran park</div>
+            <div class="text-gray-500 fw-semibold fs-6">UniNews</div>
             <!--end::Subtitle=-->
         </div>
         <!--begin::Heading-->

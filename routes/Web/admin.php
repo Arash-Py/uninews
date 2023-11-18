@@ -6,6 +6,9 @@ use App\Livewire\Admin\Admins\EditAdmin;
 use App\Livewire\Admin\Admins\IndexAdmin;
 use App\Livewire\Admin\Auth\Login;
 use App\Livewire\Admin\Dashboard\DashboardIndex;
+use App\Livewire\Admin\News\Create;
+use App\Livewire\Admin\News\Edit;
+use App\Livewire\Admin\News\Index;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,5 +38,10 @@ Route::group(['middleware' => checkUserIsAdmin::class], function () {
         Route::get('/', IndexAdmin::class)->name('admin');
         Route::get('/create', CreateAdmin::class)->name('create');
         Route::get('/edit/{admin}', EditAdmin::class)->name('edit');
+    });
+    Route::group(['prefix' => 'news', 'as' => 'news.'],function (){
+        Route::get('/', Index::class)->name('index');
+        Route::get('/create', Create::class)->name('create');
+        Route::get('/edit/{news}', Edit::class)->name('edit');
     });
 });

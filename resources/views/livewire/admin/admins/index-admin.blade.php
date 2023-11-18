@@ -8,7 +8,7 @@
             <div class="card-toolbar">
             </div>
             {{-- @can('admin_create') --}}
-            <a class="btn btn-success align-self-center" href="{{ route('admin.create') }}">ایجاد ادمین جدید</a>
+            <a class="btn btn-success align-self-center" href="{{ route('admin.news.create') }}">ایجاد خبر جدید</a>
             {{-- @endcan --}}
         </div>
         <!--begin::Card-->
