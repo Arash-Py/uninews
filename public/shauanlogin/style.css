@@ -1,0 +1,108 @@
+* {
+    margin: 0 ; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.circle-1{
+    width: 900px;
+    height: 900px;
+    position: fixed;
+    background-image: linear-gradient(to right ,#493f3f , #070707);
+    z-index: 0;
+    border-radius: 100%;
+    left: -9rem;
+    top: 50%;
+    transform: translateY(-38%);
+}
+.login-page{
+    /* background-color: #01eeff; */
+    width: 81%;
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid #fff;
+}
+.login-page form{
+width: 70%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(22px);
+}
+.login-page form h1{
+color:#fff;
+margin-bottom: 2rem;
+    }
+/* .login-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+} */
+.login-img img{
+object-fit: cover;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+.form-group label{
+    position: relative;
+    left: 280px;
+margin-bottom: .5rem;
+font-weight: bold;
+color: #fff;
+} 
+    .form-group input{
+       border: 2px solid #fff;
+       background-color: transparent;
+       height: 40px;
+       border-radius: 20px;
+       color: #e8e8e8;
+       padding: 0 20px;
+       font-size: 20px;
+ } 
+ .button-form{
+    width: 50%;
+ }
+ .button-form button {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .login-page a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+ }
+ .form-menu h1{
+    font-size: 20px;
+ }
+
+ /* .form-menu{
+    position: relative;
+    right: 20px;
+ } */

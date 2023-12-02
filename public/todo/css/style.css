@@ -1,0 +1,57 @@
+#todoList label{
+  width: 80%;
+}
+#todoList li{
+  list-style-type: none;
+  background-color: rgb(161, 46, 46);
+  border: red;
+  color: white;
+}
+.completed{
+
+}
+.uncompleted label{
+  color: #afa7a7;
+  text-decoration: line-through;
+}
+#todoList .btn{
+  margin-left: 10px;
+}
+body {
+  background-color: #2b7edd;
+}
+.form-control{
+  background-color: rgb(189, 218, 255);
+}
+#addButton{
+  background-color: rgb(8, 186, 29);
+}
+.text-center {
+  font-weight: 900;
+}
+.add-lable{
+font-size: 20px;
+}
+#addButton{
+  margin-top: 10px;
+}
+#clearButton{
+  margin-top: 10px;
+}
+.profile-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.profile-container{
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.profile-container img {
+margin-bottom: -10px;
+}
+.text-center{
+  color: white;
+  font-size: 18px;
+}

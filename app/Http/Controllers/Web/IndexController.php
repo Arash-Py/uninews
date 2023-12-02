@@ -11,7 +11,8 @@ class IndexController extends Controller
     public function index()
     {
         $news = News::all();
-        return view('web.index',compact('news'));
+        // return view('web.index',compact('news'));
+        return view('todo');
     }
 
     public function details(News $news){
