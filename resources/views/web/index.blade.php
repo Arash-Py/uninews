@@ -74,7 +74,7 @@
                                                                 <div class="blog_post_style2_content">
                                                                     <h3>{{$single_news->title}}</h3>
                                                                     <p>{{$single_news->body}}</p>
-                                                                    <a href="{{route('news.details', $single_news->id)}}" class="blog_readmore"> بیشتر بخوانید
+                                                                    <a href="{{ route('news.details', $single_news->id)}}" class="blog_readmore"> بیشتر بخوانید
                                                                         <svg style="rotate: 180deg;"
                                                                              xmlns="http://www.w3.org/2000/svg"
                                                                              width="13px"
